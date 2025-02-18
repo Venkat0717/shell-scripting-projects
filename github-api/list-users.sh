@@ -51,6 +51,7 @@ expected_cmd_args=2
 if [$# -ne $expected_cmd_args ]; then 
     echo 'Please execute the script with required cmd args'
     echo 'Expected cmd args 2 and u need to export UN and Token for particular git account'
+fi
 }
 
 
