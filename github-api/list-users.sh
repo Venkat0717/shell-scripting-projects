@@ -1,15 +1,5 @@
 #!/bin/bash
 
-#####################
-# About: This is a test shell script to print the users who has read/triage access to particular repo owner and repo name
-# Date: 18-2-25
-# Input parameters required to run this script: User / who want to execute this script should give particular github repo login UN and Token details in export manner in shell and then repo owner name and repo owner name
-# If any doubt: e-mail me on venkey997779@gmail.com
-####################
-
-helper()
-
-
 # GitHub API URL
 API_URL="https://api.github.com"
 
@@ -45,15 +35,6 @@ function list_users_with_read_access {
         echo "$collaborators"
     fi
 }
-
-function helper {
-expected_cmd_args=2
-if [$# -ne $expected_cmd_args ]; then 
-    echo 'Please execute the script with required cmd args'
-    echo 'Expected cmd args 2 and u need to export UN and Token for particular git account'
-fi
-}
-
 
 # Main script
 
